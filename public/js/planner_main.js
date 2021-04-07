@@ -12,7 +12,7 @@ const getInfo = async (event) => {
   let cityVal = cityName.value;
   let cityTimeVal = cityTime.value;
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${cityVal}&appid=c626d4a2fffd16d71a675f38a27cd52d`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${cityVal}&appid=c626d4a2fffd16d71a675f38a27cd52d`
   );
   data = await response.json();
   console.log(data);
